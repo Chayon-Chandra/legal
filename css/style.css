@@ -1,0 +1,70 @@
+@import "tailwindcss";
+/* fonts */
+@font-face {
+    font-family:eb-garamond;
+    src: url(../font/EBGaramond-ExtraBold.ttf);
+}
+@font-face {
+    font-family:poppins-semibold;
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family:poppins-regular;
+    src: url(../font/Poppins-Regular.ttf);
+}
+.img{
+    width: 100%;
+}
+:root{
+    --eb-garamond:eb-garamond;
+    --poppins-semibold:poppins-semibold;
+    --poppins-regular:poppins-regular;
+    --white-color:#FFFFFF;
+    --bronze-color:#B68C5A ;
+    --light-dark-color:#707070;
+    --black-color:#111213;
+}
+/* shared class */
+.btn-b{
+    padding: 8px 15px;
+    font-family: var(--poppins-semibold);
+    color: var(--white-color);
+    background-color: var(--bronze-color);
+    font-size: 1.12rem;
+    font-weight: 300;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.btn-b:hover{
+    color: var(--bronze-color);
+    background-color: var(--black-color);
+    transition-duration: .3s;
+}
+/* header section start */
+header{
+    margin-top: 50px;
+}
+.header-container{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li a{
+    font-family: var(--poppins-regular);
+    color: var(--light-dark-color);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.menu ul{
+    display: flex;
+    justify-content: start;
+}
+.menu ul li a:hover{
+    color: var(--bronze-color);
+    transition-duration: .3s;
+    border-bottom: 1px solid #111213;
+}
+/* header section end */
