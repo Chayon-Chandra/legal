@@ -15,6 +15,9 @@
 .img{
     width: 100%;
 }
+body{
+    background-color: #FFFFFF;
+}
 :root{
     --eb-garamond:eb-garamond;
     --poppins-semibold:poppins-semibold;
@@ -23,6 +26,8 @@
     --bronze-color:#B68C5A ;
     --light-dark-color:#707070;
     --black-color:#111213;
+    --black-dark-color:#414040;
+    --black-dark2-color:#707070;
 }
 /* shared class */
 .btn-b{
@@ -68,3 +73,93 @@ header{
     border-bottom: 1px solid #111213;
 }
 /* header section end */
+/* banner section start */
+#banner{
+    margin: 50px 0;
+}
+.overlay{
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.banner-container{
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 90%;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+.banner-container h1{
+    /* padding-top: 100px; */
+    font-family: var(--eb-garamond);
+    color: var(--white-color);
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 75px;
+    text-align: center;
+}
+.banner-container p{
+    margin: 30px 0;
+    font-family: var(--poppins-regular);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+form input{
+    margin-right: 10px;
+    padding: 10px 15px;
+    width: 30%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+/* banner section end */
+/* card section start */
+.card-container{
+    margin: 0 auto;
+    width: 90%;
+}
+.legal{
+    margin: 60px 0;
+}
+.legal h2{
+    font-family: var(--eb-garamond);
+    color: var(--black-dark-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.legal p{
+    font-family: var(--poppins-regular);
+    color: var(--black-dark2-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card-item-container{}
+.card-item{
+    padding: 20px;
+}
+.card-item:hover{
+    background-color:#F5F5F5;
+    text-decoration: .3s;
+    border-radius: 10px;
+}
+.card-item img{}
+.card-item h3{
+    font-family: var(--eb-garamond);
+    font-weight: 500;
+}
+.card-item p{
+    font-family: var(--poppins-regular);
+    color: var(--black-dark2-color);
+}
+/* card section end */
